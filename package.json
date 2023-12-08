@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ts-node test.ts",
-    "start": "ts-node index.ts",
+    "start": "nodemon index.ts",
     "build": "tsc"
   },
   "keywords": [
@@ -27,6 +27,7 @@
     "@types/turndown": "^5.0.1",
     "@types/uuid": "^9.0.1",
     "@types/ws": "^8.5.5",
+    "nodemon": "^3.0.2",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^2",
     "prettier-plugin-packagejson": "^2",

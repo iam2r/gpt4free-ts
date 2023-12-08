@@ -58,7 +58,7 @@ const AskHandle: Middleware = async (ctx) => {
   const {
     prompt,
     model = ModelType.GPT3p5Turbo,
-    site = Site.You,
+    site = Site.OpenAI,
     ...rest
   } = {
     ...(ctx.query as any),
@@ -95,7 +95,7 @@ const AskStreamHandle: (ESType: new () => EventStream) => Middleware =
     const {
       prompt,
       model = ModelType.GPT3p5Turbo,
-      site = Site.You,
+      site = Site.OpenAI,
       ...rest
     } = {
       ...(ctx.query as any),
